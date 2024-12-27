@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio Asma Slimane</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#E4E0E1]">
+    <header>
+        <nav class="flex justify-between items-center bg-[#D6C0B3] sticky top-0 h-20 font-bold text-white px-3 ">
+            <div class="xl:text-[25px] xl:px-8">
+                <p>ASMA Slimane</p>
+            </div>
+            <ul class="flex justify-between items-center xl:text-[20px] px-8 xl:w-[40%] w-[60%]">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skils">Skils</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class=" md:w-[90%] m-auto">
+        <!-- Hero Section with Background Video -->
+        <section class="hero"> <video autoplay muted loop class="hero-video">
+                <source
+                    src="https://cdn.dribbble.com/userupload/3955595/file/original-e8347e223991e881d98d645cd1ebf7aa.mp4"
+                    type="video/mp4"> Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay">
+                <div class="hero-content md:w-[60%] m-auto text-center my-5 font-bold text-[20px] pb-5">
+                    <h1>I'AM </h1>
+                    <p>Mechanical and Agro-Industriel Ingineer</p>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <!-- skills section -->
+    <section id="skils" class="shadow-lg shadow-amber-950 w-[90%] m-auto">
+        <h1 class="w-[40%] m-auto text-center my-10 font-bold text-[30px] text-[#AB886D] pt-5">My Skils</h1>
+        <div class="grid grid-cols-[80px_100px] gap-4 xl:w-[35%] m-auto pb-5 w-[60%] lg:w-[45%]">
+            <div>CATIA V5</div>
+            <div class="bg-[#493628] text-[#493628] xl:w-80 h-4 w-52">-</div>
+            <div>AUTOCAD</div>
+            <div class="bg-[#493628] text-[#493628] xl:w-96 h-4 w-64">-</div>
+            <div>MATLAB</div>
+            <div class="bg-[#493628] text-[#493628] xl:w-72 h-4 w-60">-</div>
+            <div>ISIS</div>
+            <div class="bg-[#493628] text-[#493628] xl:w-80 h-4 w-52">-</div>
+        </div>
+    </section>
+    <!-- Projects section -->
+    <section id="projects" class="shadow-lg shadow-amber-950 w-[90%] m-auto">
+        <h1 class="w-[40%] m-auto text-center my-10 font-bold text-[30px] text-[#AB886D] pt-5">Projects</h1>
+        <div class="grid lg:grid-cols-3 lg:gap-1 justify-items-center pb-5">
+            <!-- card 1 -->
+            <div class="border border-amber-950 rounded-md h-96 mb-5 w-[300px]">
+                <img class="my-5 rounded-md h-40 xl:w-72 w-60 mx-auto" src="/images/image1.jpg" alt="..">
+                <h4 class="justify-self-center font-bold text-[15px] my-4">Plastic waste recovery project</h4>
+                <p class="lg:w-70 justify-self-center">Production of recycled polyester yarn</p>
+                <button class="xl:ml-28 ml-20 border border-zinc-950 rounded-md bg-amber-900 font-bold w-32 mt-14">View
+                    Details</button>
+            </div>
+            <!-- card 2 -->
+            <div class="border border-amber-950 rounded-md h-96 mb-5 ">
+                <img class="my-5 rounded-md h-40 xl:w-72 w-60 mx-auto" src="/images/image2.jpg" alt="..">
+                <h4 class="justify-self-center font-bold text-[15px] my-4">Plant product valuation project in Tunisia
+                </h4>
+                <p class="w-[300px] text-center xl:pl-3  ">Selection and experimental validation of a pyrolysis model
+                    for
+                    high temperature treated wood</p>
+                <button class="xl:ml-28 ml-20  border border-zinc-950 rounded-md bg-amber-900 font-bold w-32 mt-4">View
+                    Details</button>
+            </div>
+            <!-- card 3 -->
+            <div class="border border-amber-950 rounded-md h-96 mb-5 ">
+                <img class="my-5 rounded-md h-40 xl:w-72 w-60 mx-auto" src="/images/image3.jpg" alt="..">
+                <h4 class="justify-self-center font-bold text-[15px] my-4">Design Project</h4>
+                <p class="lg:w-70 text-center">Design of a tomato seed oil extraction unit</p>
+                <button class="xl:ml-28 ml-20  border border-zinc-950 rounded-md bg-amber-900 font-bold w-32 mt-16">View
+                    Details</button>
+            </div>
+        </div>
+        <button
+            class="border  border-zinc-950 rounded-md bg-[#493628] w-40 h-10 font-bold text-white my-10 2xl:ml-[800px] xl:ml-[500px] lg:ml-[400px] md:ml-[300px] ml-[180px]">
+            Show all ></button>
+    </section>
+    <!-- contact form -->
+    <section id="contact"
+        class="shadow-lg shadow-amber-950 w-[90%] mx-auto my-10 py-5 2xl:px-[600px] xl:px-[350px] lg:px-[200px] md:px-[100px] px-[50px]">
+        <div class="bg-white rounded-lg shadow-lg max-w-lg">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-6 text-center">Contact Us</h2>
+
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-600">Full Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="mt-1 p-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-600">Email Address</label>
+                    <input type="email" id="email" name="email" required
+                        class="mt-1 p-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                </div>
+
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-600">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        class="mt-1 p-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-[#493628] text-white p-2 rounded-lg hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+<!-- footer -->
+<footer class="bg-[#D6C0B3] text-[#AB886D] p-6">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Copyright -->
+        <p class="text-md text-[#AB886D] font-bold">&copy; 2024 Your Company. All rights reserved.</p>
+
+        <!-- Social Media Icons -->
+        <div class="flex space-x-6">
+            <a href="#" class="text-[#AB886D] hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12c0 4.65 3.42 8.54 7.94 9.72V15H7v-3h3V9.29c0-3.15 1.83-5.24 4.72-5.24 1.36 0 2.83.25 2.83.25v3h-2c-1.5 0-1.88.94-1.88 1.89v2.61h3.14l-.5 3H15v6.72c4.52-1.18 7.94-5.07 7.94-9.72 0-5.52-4.48-10-10-10z">
+                    </path>
+                </svg>
+            </a>
+
+            <a href="#" class="text-[#AB886D] hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path
+                        d="M22 2H2c-1.1 0-1.99.9-1.99 2L0 20c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-6 16h-4v-5h4v5zm-2-7c-.83 0-1.5-.67-1.5-1.5S13.17 9 14 9s1.5.67 1.5 1.5S14.83 11 14 11zm-3 7h-4v-8h4v8z">
+                    </path>
+                </svg>
+            </a>
+
+            <a href="#" class="text-[#AB886D] hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path
+                        d="M12 2.04C6.48 2.04 2.04 6.48 2.04 12c0 4.61 3.42 8.51 7.94 9.66V15h-3v-3h3v-2.36c0-3.83 2.13-6.18 5.19-6.18 1.51 0 2.83.11 3.02.11v3h-1.7c-1.32 0-1.63.83-1.63 1.68v2.02h3l-.48 3h-2.52v6.7c4.56-1.14 7.94-5.06 7.94-9.66 0-5.52-4.48-10-10-10z">
+                    </path>
+                </svg>
+            </a>
+
+            <a href="#" class="text-[#AB886D] hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path
+                        d="M22 4.25v15.5c0 .41-.34.75-.75.75h-20c-.41 0-.75-.34-.75-.75V4.25c0-.41.34-.75.75-.75h20c.41 0 .75.34.75.75zm-11 2.98h-2V18h2v-10.77zm-1-2.36c-.79 0-1.42.64-1.42 1.42s.64 1.42 1.42 1.42c.79 0 1.42-.64 1.42-1.42s-.63-1.42-1.42-1.42zm4.83 12.13h-2v-5.5c0-1.18-.63-1.83-1.72-1.83-1.58 0-2.02 1.07-2.02 2.09v5.24h-2v-10.77h2v1.47c.26-.46.73-.79 1.33-.79 1.02 0 1.83.83 1.83 1.88v7.21z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+
+</html>

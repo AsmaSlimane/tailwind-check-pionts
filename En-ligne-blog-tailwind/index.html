@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#D9EAFD]">
+    <!-- navbar -->
+    <header class="bg-[#BCCCDC]">
+        <nav
+            class="flex justify-between items-center bg-[#BCCCDC] sticky top-0 h-20 font-bold text-white px-2 xl:px-10  ">
+            <div class="flex justify-between items-center text-[20px] xl:text-[30px] mx-5">
+                <img class="rounded-xl w-[100px] mr-1" src="/images/logo.jpg" alt="..">
+                <p class="text-center">My Blog</p>
+            </div>
+            <ul class="flex text-[15px] xl:text-[20px] space-x-1 xl:space-x-6 text-center ">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">A propos </a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Articles en vedette -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Featured Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+                    <img src="/images/yoga.jpg" alt="Article 1" class="w-full h-72 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Yoga with Adriene</h3>
+                        <p class="text-gray-600">Getting back to the true you. It can be that simple. Yoga offers up a
+                            way for us to see a world that is working for you instead of against you. </p>
+                    </div>
+                </div>
+                <!-- Article 2 -->
+                <div class="bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+                    <img src="/images/food.jpg" alt="Article 1" class="w-full h-72 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Running on Real Food</h3>
+                        <p class="text-gray-600">Welcome to Running on Real Food! Here you’ll find simple, delicious and
+                            healthy, plant-based recipes and everything you need to eat, live and thrive. Chocolate and
+                            cookies included.</p>
+                    </div>
+                </div>
+                <!-- Article 3 -->
+                <div class="bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+                    <img src="/images/running.jpg" alt="Article 1" class="w-full h-72 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Run to the Finish</h3>
+                        <p class="text-gray-600">Welcome runners!! I’m Amanda Brooks the woman running the show around
+                            here since 2007.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Category -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Category</h2>
+            <div class="flex justify-center space-x-6">
+                <span class="bg-blue-600 text-white px-4 py-2 rounded-full"> Healthy Food</span>
+                <span class="bg-green-600 text-white px-4 py-2 rounded-full"> Mental health</span>
+                <span class="bg-red-600 text-white px-4 py-2 rounded-full">Lifestyle</span>
+            </div>
+        </div>
+    </section>
+    <!-- Articles récents -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Recent Articles</h2>
+            <ul class="space-y-4">
+                <li class="text-lg text-gray-700 hover:text-black hover:font-extrabold"><a href="#">Yoga benefits beyond the mat - 25 Décembre 2024</a></li>
+                <li class="text-lg text-gray-700 hover:text-black hover:font-extrabold"><a href="#">The Importance of Mental Health Awareness - 20 Décembre
+                        2024</a></li>
+                <li class="text-lg text-gray-700 hover:text-black hover:font-extrabold">Healthy Eating: Choosing Healthy Foods for a Balanced Diet - 18
+                    Décembre 2024</li>
+                <li class="text-lg text-gray-700 hover:text-black hover:font-extrabold">Running: What It Is, Health Benefits, How to Get Started, and How to
+                    Get Better - 15 Décembre 2024</li>
+            </ul>
+        </div>
+    </section>
+     <!-- Newsletter -->
+     <section class="py-16 bg-[#384B70] text-white w-[50%] mx-auto rounded-xl mb-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Sign up for our newsletter</h2>
+            <form class="flex justify-center">
+                <input type="email" placeholder="Enter Your Email" class="p-3 rounded-l-lg w-64 text-gray-700 focus:outline-none">
+                <button type="submit" class="bg-yellow-500 text-white p-3 rounded-r-lg hover:bg-yellow-600">To sign up</button>
+            </form>
+        </div>
+    </section>
+        <!-- Pied de page -->
+        <footer class="bg-[#9AA6B2] text-[#384B70] p-8">
+            <div class="container mx-auto flex justify-between items-center">
+                <p class="text-md text-[#384B70] font-bold">&copy; 2024 My Blog. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-[#384B70] font-bold hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M12 2C6.48 2 2 6.48 2 12c0 4.65 3.42 8.54 7.94 9.72V15H7v-3h3V9.29c0-3.15 1.83-5.24 4.72-5.24 1.36 0 2.83.25 2.83.25v3h-2c-1.5 0-1.88.94-1.88 1.89v2.61h3.14l-.5 3H15v6.72c4.52-1.18 7.94-5.07 7.94-9.72 0-5.52-4.48-10-10-10z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-[#384B70] font-bold hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M22 2H2c-1.1 0-1.99.9-1.99 2L0 20c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-6 16h-4v-5h4v5zm-2-7c-.83 0-1.5-.67-1.5-1.5S13.17 9 14 9s1.5.67 1.5 1.5S14.83 11 14 11zm-3 7h-4v-8h4v8z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-[#384B70] font-bold hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M12 2.04C6.48 2.04 2.04 6.48 2.04 12c0 4.61 3.42 8.51 7.94 9.66V15h-3v-3h3v-2.36c0-3.83 2.13-6.18 5.19-6.18 1.51 0 2.83.11 3.02.11v3h-1.7c-1.32 0-1.63.83-1.63 1.68v2.02h3l-.48 3h-2.52v6.7c4.56-1.14 7.94-5.06 7.94-9.66 0-5.52-4.48-10-10-10z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-[#384B70] font-bold hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M22 4.25v15.5c0 .41-.34.75-.75.75h-20c-.41 0-.75-.34-.75-.75V4.25c0-.41.34-.75.75-.75h20c.41 0 .75.34.75.75zm-11 2.98h-2V18h2v-10.77zm-1-2.36c-.79 0-1.42.64-1.42 1.42s.64 1.42 1.42 1.42c.79 0 1.42-.64 1.42-1.42s-.63-1.42-1.42-1.42zm4.83 12.13h-2v-5.5c0-1.18-.63-1.83-1.72-1.83-1.58 0-2.02 1.07-2.02 2.09v5.24h-2v-10.77h2v1.47c.26-.46.73-.79 1.33-.79 1.02 0 1.83.83 1.83 1.88v7.21z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
